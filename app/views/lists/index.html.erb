@@ -3,7 +3,7 @@
 <% @lists.each do |list| %>
 
   <span>
-    <%= link_to list.title, /lists_path(list.id) %>
+  <%= link_to list.title, lists_path(list.id) %>
   </span>
 
 <% end %>
