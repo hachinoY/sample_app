@@ -1,7 +1,7 @@
 <div class="list-wrap">
   <% @lists.each do |list| %>
   <div class="list-box">
-    <% if @list.image.attached? %>
+    <% if list.image.attached? %>
       <%= image_tag list.image, size: "200×200" %>
     <% else %>
       <%= image_tag 'no_image', size: "200×200" %>
